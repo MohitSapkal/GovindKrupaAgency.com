@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | Ajanta Ellora Odyssey</title>
+    <!-- Favicon would go here -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                GovindKrupa<span>Agency</span>
+            </a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" style="color: var(--primary);">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner reveal">
+        <div class="container">
+            <h1>Our Real Estate Projects</h1>
+            <p>Explore our premium selection of apartments, villas, and plots across India's top cities.</p>
+        </div>
+    </section>
+
+    <!-- Detailed Projects Listings Section -->
+    <section class="projects-detailed" id="projects-page-list">
+        <div class="container">
+            <div class="project-grid" id="full-project-grid">
+                <!-- Data will be injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Book a Site Visit</h2>
+                <p style="color: var(--text-muted); margin-top: 10px;">Get in touch with our experts to schedule a viewing or request more info.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info reveal">
+                    <h3 style="margin-bottom: 20px;">Contact Information</h3>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt text-orange"></i> 12/A Corporate Park, Vashi, Navi Mumbai, MH 400703</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-phone-alt text-orange"></i> +91 98765 43210</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-envelope text-orange"></i> contact@realestatecompany.in</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form reveal">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="I'm interested in booking a site visit..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Book a Site Visit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 20px;">GovindKrupa<span>Agency</span></a>
+                    <p style="color: rgba(255,255,255,0.7);">Your premier gateway to trusted real estate investments in India.</p>
+                    <div class="social-links" style="margin-bottom: 20px;">
+                        <a href="#" style="color: var(--white); font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--white); font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--white); font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Property Buying</a></li>
+                        <li><a href="#">Property Selling</a></li>
+                        <li><a href="#">Legal Consulting</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Govind Krupa Real Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals Removed for Dedicated Pages -->
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

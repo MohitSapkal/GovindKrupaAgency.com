@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Govind Krupa</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+   <header id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                GovindKrupa<span>Agency</span>
+            </a>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" style="color: var(--primary);">Projects</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Project Detail Container (Injected via JS) -->
+    <div id="project-detail-container">
+        <!-- Loader during data injection -->
+        <div style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <p>Loading project details...</p>
+        </div>
+        
+    </div>
+
+    <!-- Contact CTA Section -->
+    <section class="contact" id="contact" style="background-color: var(--light-bg);">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Interested in this <span class="text-orange">Property?</span></h2>
+                <p>Book a site visit or request more details</p>
+            </div>
+            <div style="max-width: 600px; margin: 0 auto; background: var(--white); padding: 40px; border-radius: var(--radius); box-shadow: var(--shadow-md);">
+                <form id="contactForm">
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <input type="text" id="name" placeholder="Your Name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Poppins', sans-serif;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 20px;">
+                        <input type="tel" id="phone" placeholder="Your Phone Number" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-family: 'Poppins', sans-serif;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Book a Site Visit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="color: white; margin-bottom: 20px;">GovindKrupa<span>Agency</span></a>
+                    <p style="color: rgba(255,255,255,0.7);">Your premier gateway to trusted real estate investments in India.</p>
+                    <div class="social-links" style="margin-bottom: 20px;">
+                        <a href="#" style="color: var(--white); font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: var(--white); font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: var(--white); font-size: 1.5rem; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Property Buying</a></li>
+                        <li><a href="#">Property Selling</a></li>
+                        <li><a href="#">Legal Consulting</a></li>
+                        <li><a href="#">Market Analysis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Govind Krupa Real Estate. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/project-details.js"></script>
+</body>
+</html>
