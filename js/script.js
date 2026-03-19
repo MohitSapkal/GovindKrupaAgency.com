@@ -133,5 +133,54 @@ document.addEventListener('DOMContentLoaded', () => {
             behavior: 'smooth'
         });
     });
+    /* --- Hero Text Cycler --- */
+    const changingText = document.getElementById('changing-text');
+    if (changingText) {
+        const textLines = [
+            "Find Your Dream Property",
+            "Modern Luxury Living",
+            "Trusted Real Estate Partner",
+            "Expert Guidance Always"
+        ];
+        let currentIndex = 0;
 
+        setInterval(() => {
+            // Start fade out
+            changingText.classList.add('fade-out');
+            changingText.classList.remove('fade-in');
+
+            setTimeout(() => {
+                // Change text and start fade in
+                currentIndex = (currentIndex + 1) % textLines.length;
+                changingText.innerText = textLines[currentIndex];
+                changingText.classList.remove('fade-out');
+                changingText.classList.add('fade-in');
+            }, 500); // Should match CSS transition duration
+        }, 4000); // Change text every 4 seconds
+    }
+    /* --- WhatsApp Form Integration --- */
+    const whatsappFormBtn = document.getElementById('whatsappFormBtn');
+    if (whatsappFormBtn && contactForm) {
+        whatsappFormBtn.addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !message) {
+                alert('Please fill in your name and message.');
+                return;
+            }
+
+            const whatsappNumber = "919876543210";
+            let text = `*New Inquiry from Website*\n\n`;
+            text += `*Name:* ${name}\n`;
+            if (phone) text += `*Phone:* ${phone}\n`;
+            text += `*Message:* ${message}`;
+
+            const encodedText = encodeURIComponent(text);
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedText}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+    }
 });

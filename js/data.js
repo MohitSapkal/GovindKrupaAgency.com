@@ -10,7 +10,7 @@ const allProjects = [
         location: "Near MIT College, 200m from Beed Bypass, Chhatrapati Sambhaji Nagar",
         price: "Starting from ₹45 Lakhs",
         propertyType: "Apartment (2BHK)",
-        image: "images/navkar.png",
+        image: "images/navkar.jpg",
         description: "Luxurious 2BHK ready possession flats in a premium and highly connected location.",
         fullDescription: "Navkar Residency offers luxurious 2BHK ready possession flats in a premium and highly connected location. Designed for modern living, these homes feature spacious layouts, premium finishes, and smart planning for everyday comfort. This is not just a home, but a complete lifestyle upgrade, ideal for families and investors looking for value and convenience.",
         amenities: ["Ready Possession Flats", "Spacious Living Hall with Modern False Ceiling", "Smart & Functional Kitchen", "Comfortable Master Bedroom", "Children-Friendly Bedroom", "Lift Facility", "Allotted Parking"],
@@ -18,7 +18,7 @@ const allProjects = [
         status: "Ready to Move",
         rera: "Approved",
         nearbyLocations: ["Alpine Hospital \u2013 200m", "Kamalnayan Bajaj Hospital \u2013 800m", "Gurukul School \u2013 500m", "Jain International School \u2013 500m"],
-
+        youtubeVideo: "https://www.youtube.com/embed/lSrbzyiKLmo" 
     },
     {
         id: 99,

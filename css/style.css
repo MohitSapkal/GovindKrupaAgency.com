@@ -255,6 +255,23 @@ header.active {
     justify-content: center;
 }
 
+/* --- Changing Text Animation --- */
+#changing-text {
+    display: inline-block;
+    min-width: 300px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#changing-text.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#changing-text.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* --- Project Listings --- */
 .projects {
     background-color: var(--light-bg);
@@ -621,12 +638,12 @@ footer {
 /* --- Back to Top --- */
 .back-to-top {
     position: fixed;
-    bottom: 30px;
+    bottom: 100px;
     right: 30px;
     background-color: var(--primary);
     color: var(--white);
-    width: 45px;
-    height: 45px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -640,8 +657,47 @@ footer {
 }
 
 .back-to-top.active {
-    opacity: 1;
+    opacity: 2;
     visibility: visible;
+}
+
+/* --- WhatsApp Sticky Button --- */
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #25D366;
+    color: var(--white);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 4px 15px rgba(4, 85, 34, 0.233);
+    z-index: 1000;
+    cursor: pointer;
+    transition: var(--transition);
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-sticky:hover {
+    background-color: #1DA851;
+    transform: scale(1.1);
+    color: var(--white);
+}
+
+@keyframes pulse-whatsapp {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
 }
 
 /* --- Project Details View --- */

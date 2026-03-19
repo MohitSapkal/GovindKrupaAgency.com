@@ -104,6 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
                             `).join('')}
                         </div>
                         ` : ''}
+
+                        ${project.youtubeVideo ? `
+                        <h3 style="margin-top: 40px; margin-bottom: 20px; font-size: 1.5rem;">Property Video</h3>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: var(--radius); box-shadow: var(--shadow-md);">
+                            <iframe src="${project.youtubeVideo}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen></iframe>
+                        </div>
+                        ` : ''}
                     </div>
 
                     <!-- Right: Info Card -->
