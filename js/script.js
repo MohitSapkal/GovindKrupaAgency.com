@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            const whatsappNumber = "919876543210";
+            const whatsappNumber = "919545560674";
             let text = `*New Inquiry from Website*\n\n`;
             text += `*Name:* ${name}\n`;
             if (phone) text += `*Phone:* ${phone}\n`;
